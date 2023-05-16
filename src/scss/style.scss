@@ -1,0 +1,44 @@
+$buttons: #FF3E79;
+$pseudo1: #41F6D7;
+$pseudo2: #EAEAEA;
+$text: #7E7E82;
+$text2: black;
+$background1: #F8F8F8;
+$background2: #FFFFFF;
+@import 'blocks/main__header.scss';
+@import 'blocks/main__title&nav.scss';
+@import 'blocks/main__brands.scss';
+@import 'blocks/aside__burger.scss';
+@import 'blocks/overlay.scss';
+@import 'blocks/main.scss';
+@import '../fonts/fontsStylesheet.css';
+@import 'blocks/main__about.scss';
+@import 'media/media.scss';
+@import 'blocks/main__technique.scss';
+@import 'blocks/main__prices.scss';
+@import 'blocks/main__footer.scss';
+@import 'blocks/aside__feedback.scss';
+@import 'blocks/aside__call.scss';
+
+a,
+button {
+    cursor: pointer;
+}
+a:hover,
+button:hover{
+opacity: 0.7;
+}
+
+a:focus,
+button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px lightskyblue;
+  border-radius: 5px;
+}
+
+body {
+
+    font-family: "TT Lakes";
+    margin: 0;
+    position: relative;
+}

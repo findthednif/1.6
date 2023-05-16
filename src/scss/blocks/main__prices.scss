@@ -1,0 +1,124 @@
+.prices {
+    padding-top: 30px;
+
+    .swiper {
+        padding: 16px;
+
+        .swiper-slide {
+            width: auto;
+        }
+
+        .swiper-pagination {
+            transform: translateY(12px);
+        }
+
+        .swiper-pagination-bullet {
+            background-color: $text;
+        }
+    }
+
+    .prices__block {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        padding: 16px;
+        position: relative;
+        width: 260px;
+        height: 200px;
+        background-color: $background2;
+
+        .block__servise {
+            display: flex;
+            flex-direction: column;
+
+            .servise__desc {
+                color: $text;
+            }
+        }
+
+        .block__button {
+            position: absolute;
+            right: 16px;
+            bottom: 16px;
+            width: 119px;
+            height: 32px;
+            border-radius: 16px;
+            background-color: $background2;
+            padding: 0;
+            border: none;
+        }
+    }
+
+    .prices__title::before {
+        content: "";
+        height: 1px;
+        background-color: $pseudo1;
+    }
+
+    .prices__title {
+        background: linear-gradient(90deg, #F8F8F8 0%, #FFFFFF 100%);
+        display: flex;
+        flex-direction: column;
+        color: $text;
+        margin: 0;
+
+        .title__text {
+            margin: 16px;
+            margin-left: 24px;
+        }
+    }
+
+    .prices__list {
+        background-color: $background2;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        margin-left: 24px;
+        margin-right: 24px;
+
+        .list__elem:first-child {
+            background-color: $background1;
+            color: $text;
+            margin: 0;
+
+            .elem__cell:first-child {
+                padding-left: 24px;
+            }
+        }
+
+        .list__elem {
+            display: grid;
+            grid-template-columns: 3fr repeat(3, 1fr);
+            grid-template-rows: 70px;
+            border-bottom: 1px solid #EAEAEA;
+            align-items: center;
+            margin-left: 24px;
+            margin-right: 24px;
+
+            .elem__button {
+                width: 119px;
+                height: 32px;
+                border-radius: 16px;
+                background-color: $background2;
+                padding: 0;
+                border: none;
+            }
+        }
+    }
+
+    .prices__info {
+        margin-left: 24px;
+        font-size: 14px;
+        max-width: 421px;
+    }
+
+    .prices__offer {
+        display: block;
+        margin-left: 24px;
+        font-weight: 600;
+
+        .offer__line {
+            padding-left: 10px;
+        }
+    }
+}

@@ -1,0 +1,87 @@
+.brands {
+    padding-top: 30px;
+
+    .brands__title::before {
+        content: "";
+        height: 1px;
+        background-color: $pseudo1;
+    }
+
+    .brands__title {
+        background: linear-gradient(90deg, #F8F8F8 0%, #FFFFFF 100%);
+        display: flex;
+        flex-direction: column;
+        color: $text;
+        margin: 0;
+
+        .title__text {
+            margin: 16px;
+            margin-left: 24px;
+        }
+    }
+
+    .brands__main {
+        .swiper {
+            padding: 16px;
+
+            .swiper-slide {
+                width: auto;
+            }
+
+            .swiper-pagination {
+                transform: translateY(12px);
+            }
+
+            .swiper-pagination-bullet {
+                background-color: $text;
+            }
+        }
+
+        .brands__list {
+            margin: 0;
+            padding: 24px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(auto, 224px));
+            list-style-type: none;
+            column-gap: 24px;
+            row-gap: 16px;
+            overflow-y: auto;
+            max-height: 768px;
+            transition: max-height 0.5s;
+        }
+
+        .brands__list--short {
+            overflow-y: hidden;
+            max-height: 150px;
+        }
+
+        .block__button {
+            width: 224px;
+            height: 72px;
+            padding: 16px;
+            max-width: 244px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border: 1px solid $pseudo2;
+            border-radius: 6px;
+            background-color: $background2;
+        }
+
+        .list__read-more {
+            margin-left: 24px;
+            border: none;
+            background-color: $background1;
+            font-size: 16px;
+
+            .read-more__icon {
+                transition: transform 300ms ease;
+            }
+
+            .read-more__icon--rotate {
+                transition: transform 300ms ease;
+                transform: rotate(180deg);
+            }
+        }
+    }
+}

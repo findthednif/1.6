@@ -1,0 +1,17 @@
+.main {
+    background-color: $background1;
+    a:active,
+    button:active{
+        transform: translateY(1px);
+    }
+    .divider {
+        content: "";
+        height: 1px;
+        width: 100%;
+        background-color: $pseudo1;
+    }
+}
+
+.main--positioned {
+    margin-left: 320px;
+}

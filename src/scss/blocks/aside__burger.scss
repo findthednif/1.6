@@ -1,0 +1,131 @@
+.burger {
+    a:active,
+    button:active{
+    transform: translateY(1px);
+    }
+    position: fixed;
+    left: 0;
+    top: 0;
+    transition: left 0.5s ease;
+    background-color: $background2;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    min-width: 320px;
+    max-width: 320px;
+    min-height: 1024px;
+    z-index: 3;
+    box-shadow: 5px 0 10px rgba(0, 0, 0, 0.3);
+    .nav__link:focus::before {
+        position: absolute;
+        left: -1px;
+        content: "";
+        width: 4px;
+        height: 32px;
+        background-color: $pseudo1;
+        border-radius: 1em;
+        transform: translateY(-5px);
+    }
+
+    .burger__header {
+        display: flex;
+        align-items: center;
+        padding: 24px;
+
+        .burger__button:first-child {
+            margin-right: 16px;
+        }
+
+        .burger__button:last-child {
+            margin-left: auto;
+        }
+    }
+
+    .burger__button,
+    .actions__button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        Width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+
+    .nav__list {
+        padding: 0;
+        padding-left: 24px;
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        gap: 32px;
+    }
+
+    .nav__link {
+        text-decoration: none;
+        color: $text2;
+        font-weight: 600;
+    }
+
+    .nav__link:focus {
+        color: $text;
+    }
+
+    .burger__actions {
+        padding: 0;
+        display: flex;
+        list-style-type: none;
+        gap: 16px;
+    }
+
+    .burger__footer {
+        display: flex;
+        flex-direction: column;
+        padding-left: 24px;
+        margin-top: auto;
+
+        .email,
+        .number {
+            text-decoration: none;
+            color: $text2;
+        }
+
+        .email {
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .number {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 40px;
+        }
+
+        .burger__lang {
+            display: flex;
+            list-style-type: none;
+            padding: 0;
+            gap: 7px;
+        }
+
+        .lang__name {
+            font-weight: 600;
+            transition: color 5s ease-in;
+        }
+
+        .lang__radio {
+            display: none;
+        }
+
+        .lang__radio:checked~.lang__text {
+            position: relative;
+            top: 2px;
+            color: $text;
+        }
+    }
+}
+
+.burger--hidden {
+    left: -150%;
+    box-shadow: none;
+}

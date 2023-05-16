@@ -1,0 +1,38 @@
+.main__about {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 14px;
+    padding-left: 16px;
+
+    .about__info {
+        margin-right: 36px;
+        margin-bottom: 16px;
+        max-width: 490px;
+
+        .info__text {
+            max-height: 300px;
+            transition: max-height 0.5s;
+        }
+
+        .info__text--short {
+            max-height: 130px;
+            overflow: hidden;
+        }
+
+        .info__readMore {
+            padding: 8px;
+            border: none;
+            background-color: $background1;
+
+            .readMore__icon {
+                margin-right: 16px;
+                transition: transform 300ms ease;
+            }
+
+            .readMore__icon--rotate {
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+}
