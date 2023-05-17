@@ -7,8 +7,8 @@ function listener(clickedElem) {
   });
   clickedElem.classList.toggle("list__elem--chosen");
 }
-for (let i = 0; i < listElem.length; i++) {
-  listElem[i].addEventListener("click", function () {
-    listener(listElem[i]);
+listElem.forEach((elem) => {
+  elem.addEventListener("click", function () {
+    listener(elem);
   });
-}
+});

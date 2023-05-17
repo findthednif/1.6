@@ -1,6 +1,6 @@
 const asideBurger = document.querySelector(".burger");
 const burgerButton = document.querySelector(".header__burger");
-const xButton = asideBurger.querySelector(".burger__x");
+const closeButton = asideBurger.querySelector(".burger__x");
 const resolution = window.matchMedia("(min-width: 1365px)");
 const main = document.querySelector(".main");
 const overlay = document.querySelector(".overlay");
@@ -11,7 +11,7 @@ function smallResolution() {
     overlay.classList.remove("overlay--hidden");
     asideBurger.classList.remove("burger--hidden");
   });
-  xButton.addEventListener("click", function () {
+  closeButton.addEventListener("click", function () {
     overlay.classList.add("overlay--hidden");
     asideBurger.classList.add("burger--hidden");
   });
