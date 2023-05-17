@@ -1,5 +1,5 @@
 .technique {
-    padding-top: 30px;
+    padding-top: 50px;
 
     .technique__title::before {
         content: "";
@@ -41,10 +41,10 @@
             margin: 0;
             padding: 24px;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(auto, 224px));
+            grid-template-columns: repeat(auto-fit, minmax(auto, 240px));
             list-style-type: none;
-            column-gap: 24px;
-            row-gap: 16px;
+            column-gap: 32px;
+            row-gap: 24px;
             overflow-y: auto;
             max-height: 768px;
             transition: max-height 0.5s;
@@ -56,6 +56,7 @@
         }
 
         .block__button {
+            box-sizing: border-box;
             position: relative;
             width: 240px;
             height: 160px;
@@ -82,7 +83,8 @@
         }
 
         .list__read-more {
-            margin-left: 24px;
+            margin: 24px;
+            margin-bottom: 0;
             border: none;
             background-color: $background1;
             font-size: 16px;

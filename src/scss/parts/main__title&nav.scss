@@ -53,6 +53,9 @@
             text-decoration: none;
             white-space: nowrap;
         }
+        .elem__link:focus{
+            box-shadow: none;
+        }
     }
 
     .list__elem--chosen {

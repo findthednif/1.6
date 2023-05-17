@@ -5,20 +5,20 @@ $text: #7E7E82;
 $text2: black;
 $background1: #F8F8F8;
 $background2: #FFFFFF;
-@import 'blocks/main__header.scss';
-@import 'blocks/main__title&nav.scss';
-@import 'blocks/main__brands.scss';
-@import 'blocks/aside__burger.scss';
-@import 'blocks/overlay.scss';
-@import 'blocks/main.scss';
+@import 'parts/main__header.scss';
+@import 'parts/main__title&nav.scss';
+@import 'parts/main__brands.scss';
+@import 'parts/aside__burger.scss';
+@import 'parts/overlay.scss';
+@import 'parts/main.scss';
 @import '../fonts/fontsStylesheet.css';
-@import 'blocks/main__about.scss';
+@import 'parts/main__about.scss';
 @import 'media/media.scss';
-@import 'blocks/main__technique.scss';
-@import 'blocks/main__prices.scss';
-@import 'blocks/main__footer.scss';
-@import 'blocks/aside__feedback.scss';
-@import 'blocks/aside__call.scss';
+@import 'parts/main__technique.scss';
+@import 'parts/main__prices.scss';
+@import 'parts/main__footer.scss';
+@import 'parts/aside__feedback.scss';
+@import 'parts/aside__call.scss';
 
 a,
 button {
