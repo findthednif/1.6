@@ -1106,7 +1106,8 @@
   height: 100%;
   box-shadow: -5px 0 10px rgba(0, 0, 0, 0.3);
   z-index: 3;
-  transition: right 0.5s ease; }
+  transition: right 1.5s ease;
+  overflow: scroll; }
   .feedback .feedback__title {
     display: flex;
     align-items: center;
@@ -1155,6 +1156,7 @@
       color: #7E7E82; }
 
 .feedback--hidden {
+  position: fixed;
   right: -150%;
   box-shadow: none; }
 
@@ -1168,7 +1170,8 @@
   height: 100%;
   box-shadow: -5px 0 10px rgba(0, 0, 0, 0.3);
   z-index: 5;
-  transition: right 0.5s ease; }
+  transition: right 1.5s ease;
+  overflow: scroll; }
   .call .call__title {
     display: flex;
     align-items: center;
@@ -1217,6 +1220,7 @@
       color: #7E7E82; }
 
 .call--hidden {
+  position: fixed;
   right: -150%;
   box-shadow: none; }
 
