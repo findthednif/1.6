@@ -152,7 +152,7 @@ module.exports = {
                 },
             },
             {
-                test: /\.(?:|woff2|woff)$/i,
+                test: /\.(?:|woff2|woff|ttf|eot)$/i,
                 type: 'asset/resource',
                 generator: {
                     filename: () => {
