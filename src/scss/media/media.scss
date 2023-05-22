@@ -34,6 +34,10 @@
 }
 
 @media (max-width: 768px) {
+    .aside__call,
+    .aside__feedback{
+        overflow-y: auto;
+    }
 
     .header__logo:before,
     .action:nth-child(-n+3) {
@@ -42,5 +46,11 @@
 
     .main__footer {
         flex-direction: column;
+    }
+}
+@media (max-height: 768px){
+    .call,
+    .feedback{
+        overflow-y: scroll;
     }
 }
